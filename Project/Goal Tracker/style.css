@@ -1,0 +1,137 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+   background: linear-gradient(
+    225deg,
+    rgba(64, 193, 232, 0.2),
+    rgba(255, 165, 0, 0.2),
+    rgba(173, 97, 130, 0.25),
+    rgba(0, 200, 83, 0.2),
+    rgba(64, 193, 232, 0.2),
+    rgba(255, 165, 0, 0.2),
+    rgba(64, 193, 232, 0.2)
+  );
+  background-size: 1000% 1000%;
+  animation: gradientShift 6s ease infinite;
+  
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+}
+
+
+.calendar-container {
+  background: #e8faff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-header button {
+  background: #4a6cf7;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#monthYear {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 15px;
+  background: #f5fdff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.day:hover {
+  background: #cfe7ff;
+}
+
+.selected {
+  background: #4a6cf7;
+  color: white;
+  font-weight: bold;
+}
+
+.goal-input {
+  margin-top: 20px;
+}
+
+.goal-input input {
+  width: 70%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  font-size: medium;
+  font-weight: bold;
+
+}
+
+.goal-input button {
+  background: #4a6cf7;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.goal-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.goal-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goal-list li {
+  background: #f5fdff;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}

@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+div
+{
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.471);
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    /* margin: 25px; */
+    padding: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+/* span
+{
+    display: block;
+    border: 2px solid blue;
+    width: 800px;
+    height: 50px;
+    /* height and width is not applied in inline elements */
+    /* margin:10px; */
+    /* margin cant't be applied in horizontal */
+    /* padding: 15px; }*/
+
+span
+{
+    border: 2px solid black;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    /* behave as inline but contain customize properties like width and height */
+    margin: 10px;
+    padding: 10px;
+}

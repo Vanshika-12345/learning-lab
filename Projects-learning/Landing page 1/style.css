@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Monument Extended"; /* Choose a descriptive name */
+  src: url("path/to/MonumentExtended-Regular.woff2") format("woff2"),
+    url("path/to/MonumentExtended-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("path/to/MonumentExtended-Ultrabold.woff2") format("woff2"),
+    url("path/to/MonumentExtended-Ultrabold.woff") format("woff");
+  font-weight: 800; /* For ultrabold weight */
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(345deg, 17%, 70%);
+  display: flex;
+}
+#part1 {
+  height: 100%;
+  width: 26%;
+}
+#part2 {
+  height: 100%;
+  width: 67%;
+  background-color: rgb(0, 174, 255);
+  background-image: url(https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: hsla(343, 10%, 64%, 0.499);
+}
+#part3 {
+  height: 100%;
+  width: 7%;
+}
+#text-div {
+  position: absolute;
+  width: 400px;
+  left: 7%;
+  top: 20%;
+  transform: translate(0, 50%);
+  -webkit-transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  -o-transform: translate(0, 50%);
+}
+#text-div > h1 {
+  font-size: 95px;
+  font-family: "Monument Extended", sans-serif;
+  font-weight: 900;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  line-height: 78px;
+  color: #fff;
+}
+#small-img-div {
+  height: 400px;
+  width: 300px;
+  background-image: url(https://plus.unsplash.com/premium_photo-1668485968590-aff3717c1dbe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#overlay-in {
+  height: 100%;
+  width: 100%;
+  background-color: hsla(343, 10%, 64%, 0.2);
+}
+#vertical-text
+{
+    position: absolute;
+    right: -45%;
+    top: -3.5%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform-origin: 0% 0%;
+   
+}
+#vertical-text h1
+{
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: transparent;
+    font-family: "monument",sans-serif;
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+
+    
+}

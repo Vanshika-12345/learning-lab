@@ -1,0 +1,13 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.box
+{
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* width: 1536px; */
+    width: 100vw;
+    background-color: aquamarine;
+}

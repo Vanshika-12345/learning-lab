@@ -1,0 +1,176 @@
+:root {
+    --color: #ffffffee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+nav {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 1.3rem;
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 50px; /* Added padding to ensure gradient is visible */
+    background-image: linear-gradient(to right, 
+        #a9a4d6, #a8a9d8, #a8aeda, #a8b2db, #a9b7dc, 
+        #a8bee0, #a7c5e4, #a8cbe7, #a7d5ec, #a7dff0, 
+        #aae8f1, #b1f1f1
+    );
+}
+
+.nav-container {
+    width: 100vw;
+    height: 70px;
+    background-image: linear-gradient(to right,         #19063f, #201751, #262762, #2d3774, #334886,         #314884, #2f4981, #2e497f, #233968, #182a52,         #0d1c3e, #040b2a    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+
+#nav-list {
+    list-style-type: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+#nav-logo {
+    font-family: "Urbanist", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color);
+     text-decoration-thickness: 1px;
+    text-decoration-line: overline;
+    text-decoration-color:var(--color) ;
+    -moz-text-decoration-color:var(--color) ;
+    -moz-text-decoration-line: overline;
+}
+
+#nav-items {
+    display: flex;
+    gap: 25px;
+}
+
+.contentBox {
+    width: 90%;
+    margin: auto;
+    min-height: 80vh; /* ensures it doesn’t take full height */
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.85); /* translucent white */
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Optional: allows responsiveness */
+    padding: 20px;
+}
+
+.contentBox {
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.127); /* keep semi-transparent */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3rem;
+    flex-wrap: nowrap;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.leftbox {
+    width: 50%;
+}
+
+.rightbox {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.rightbox img
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    width: 500px;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all 0.6s 0s;
+    -webkit-transition: all 0.6s 0s;
+    -moz-transition: all 0.6s 0s;
+    -ms-transition: all 0.6s 0s;
+    -o-transition: all 0.6s 0s;
+}
+.rightbox :hover
+{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.leftbox
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2
+{
+    font-size: 2rem;
+    text-shadow: 5px 7px 5px white;
+}
+
+.footerBox {
+    background-image: linear-gradient(to right, 
+        #19063f, #201751, #262762, #2d3774, #334886, 
+        #314884, #2f4981, #2e497f, #233968, #182a52, 
+        #0d1c3e, #040b2a
+    );
+    position: relative;
+    font-family: "Urbanist", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--color);
+    width: 100%;
+    min-height: 90px;
+    text-align: center;
+    margin-top: 2px;
+    bottom: 0;
+    align-content: center;
+}
+
+.ingbox
+{
+    font-size: 1.3rem;
+}

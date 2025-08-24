@@ -1,0 +1,13 @@
+.box
+{
+    background-color: aqua;
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+}
+@media (min-width:500px) {
+    .box
+    {
+        background-color: pink;
+    }
+}

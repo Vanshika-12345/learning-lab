@@ -1,0 +1,47 @@
+div
+{
+    border: 1px solid black;
+}
+img
+{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+.container
+{
+    height: 800px;
+    background-color: rgb(190, 190, 139);
+    position: relative;
+}
+/* By default position property is static and any property like top, bottom , left and right cant be added */
+/* for applying these properties we have to set position to relative */
+.img2
+{
+    /* position: relative; */
+    /* position: absolute;
+    /* relative to its closest positioned ancestor, and it does not retained
+    gap,  */
+    top: 10px;
+    left: 200px;
+    /* top: 100px;
+    left: 200px; */
+}
+.img3
+{
+    position: fixed;
+}
+.img4
+{
+    position: sticky;
+    left: 100%;
+    top: 100px;
+}
+
+.box
+{
+    height: 1000px;
+    background-color: rgb(192, 192, 75);
+    /* isme sticky wali img to sirf uske parent div tk hi rhegi,
+    par fixed wali dusre div me b aa skti hai */
+}

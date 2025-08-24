@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Box</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            border: 1px solid rgb(199, 199, 219);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex; /* fixed here */
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(69, 69, 181, 0.729);
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgba(135, 135, 180, 0.767);
+        }
+        button:hover
+        {
+            width: 99px;
+            height: 29px;
+            background-color: rgba(41, 41, 154, 0.749);
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <button>Subscribe</button>
+</body>
+</html>

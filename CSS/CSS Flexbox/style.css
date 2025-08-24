@@ -1,0 +1,48 @@
+.container
+{
+    background-color: beige;
+    border: 5px solid brown;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 700px;
+    /*flex-wrap:wrap; maintains the initial size of flex items on responsive*/
+   /* flex-flow: column wrap; alternative for flex-direction and flex-flow */
+   justify-content: end;
+   align-items: start;
+   align-content: center; /*removes the space between the items*/
+    
+}
+.box
+{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 2px;
+    padding: 2px;
+}
+#box1
+{
+    background-color: aquamarine;
+    order: 500; /*defines the sequence of flex items*/
+    flex-shrink: 4; /* increases the speed of shrinking on responsive to others*/
+    flex-grow: 5;
+    align-self: center;
+}
+#box2
+{
+    background-color: pink;
+    flex-grow: 1;
+}
+#box3
+{
+    background-color: rgba(46, 251, 46, 0.679);
+    flex-grow: 1;
+}
+#box4
+{
+    background-color: rgb(174, 65, 65);
+    flex-grow: 1;
+}
+

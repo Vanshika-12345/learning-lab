@@ -1,0 +1,41 @@
+:root
+{
+    --primary-color:rgb(50, 50, 158);
+    --custom-width:330px;
+}
+img
+{
+    height: 100px;
+    width: 100px;
+}
+.container
+{
+    background-color: rgb(216, 216, 143);
+    height: 650px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box
+{
+    background-color: rgb(62, 36, 156);
+    height: var(--custom-width);
+    width: var(--custom-width);
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    /* box-shadow: 10px 10px brown; */
+    /* box-shadow: 10px 15px 30px blue; */
+    /* box-shadow: x-offset y-offset blur-radius color */
+    /* x and y offsets can be -ve */
+    /* box-shadow: 10px 15px 30px 20px blue; */
+    /* box-shadow: x-offset y-offset blur-radius spread-radius color */
+    /* box-shadow: inset 10px 15px 50px rgb(42, 42, 176); */
+    /* box-shadow: inset 10px 15px 50px rgb(42, 42, 176); */
+     /* box-shadow: inset 10px 15px 50px black,10px 15px 30px var(--primary-color); */
+}
+#heading
+{
+    text-shadow: 2px 2px 4px white;
+}

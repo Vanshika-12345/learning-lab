@@ -1,0 +1,28 @@
+/* specificity=1 */
+h1  
+{
+    color: aqua;
+}
+/* specificity=10 */
+.yellow
+{
+    color: yellow;
+}
+/* specificity=10 + 10000(important) */
+.cred
+{
+    color: red !important;
+}
+/* specificity=10 */
+/* jo sbse baad mein vo apply hoga -> effect of position */
+.cpurple
+{
+    color: blue;
+}
+/* specificity priority-> important>inline>id>class or attribute>element>universal */
+/* attribute selector */
+/* specificity=10 */
+[data-x=a]
+{
+    background-color: aquamarine;
+}

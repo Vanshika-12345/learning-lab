@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <label for="EmailID">Email:</label>
+        <input type="email" id="EmailID" name="EmailID">
+        <br>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+        <br>
+        <label for="fileN">Resume:</label>
+        <input type="file" id="fileN" name="fileN">
+        <br>
+        <br>
+        <label for="exp">Experience(years)</label>
+        <input type="number" id="exp" name="experience" min="0" max="20">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Skills:</legend>
+            <label for="skill1">HTML</label>
+            <input type="checkbox" name="skills" id="skill1">
+            <label for="skill2">CSS</label>
+            <input type="checkbox" name="skills" id="skill2">
+            <label for="skill3">JavaScript</label>
+            <input type="checkbox" name="skills" id="skill3">
+        </fieldset>
+        <br>
+        <br>
+        <label for="education">Highest Education:</label>
+        <select name="educ" id="education">
+            <option value="High School">High School</option>
+            <option value="University">Bachelor's</option>
+            <option value="Master">Master's</option>
+            <option value="pdf">PHD</option>
+            <option value="Others">Others</option>
+        </select>
+        <br>
+        <br>
+        <label for="availability">Availability</label>
+        <br>
+        <input type="radio" name="avail" id="avail">
+        <label for="avail">Full time</label>
+        <br>
+        <input type="radio" name="avail" id="avail">
+        <label for="avail">Part time</label>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+
+        Extra
+        <section>
+            <h2>frequently asked question</h2>
+            <details>
+                <summary>What is your name?</summary>
+                <p>My name is Vanshika</p>
+            </details>
+            <details>
+                <summary>What are you doing?</summary>
+                <p>I am creating a webpage</p>
+            </details>
+            <details>
+                <summary>How to create A webpage?</summary>
+                <p>I am creating a webpage using HTML</p>
+            </details>
+        </section>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.box
+{
+    background-color: aquamarine;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.box1
+{
+    margin: 25px;
+    padding: 10px;
+    height: 200px;
+    border: 2px solid blue;
+     box-sizing: border-box;   /* gives total height of content+border+padding */
+}
+.box2
+{
+    background-color: rgb(180, 74, 74);
+    margin: 25px;
+    padding: 10px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+     box-sizing: border-box;
+}
+/* The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of
+ the individual margins (or just one of them generally greater one, if they are equal), a behavior known as margin collapsing */

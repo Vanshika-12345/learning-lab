@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100vw;
+    height: 100vh;  
+    background-color: rgb(226, 226, 156);
+    border: 5px solid black;
+}
+.box
+{
+    width: 350px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 10px;
+    border: 3px solid black;
+    position: relative;
+    /*animation-name: rightMovement;
+    *//*animation-duration: 5s;
+    animation-iteration-count: 1;
+    *//*animation-delay: 2s;
+    *//*animation-timing-function: ease-out;
+    /*animation-timing-function: cubic-bezier(1,-0.4,1,1);
+    *//*animation-direction:alternate-reverse;
+    animation-fill-mode: forwards;
+    @keyframesduration|easing-function|delay|iteration-count|direction|fill-mode|play-state|name*/
+    animation: 3.5s linear 1s  infinite alternate none running rightMovement;
+    -webkit-animation: 3.5s linear 1s  infinite alternate none running rightMovement;
+}
+@keyframes rightMovement
+{
+    from
+    { 
+        top: 0;
+        left: 0;
+    }
+    to
+    {
+        top: 0;
+        left: 1200px;
+    }
+}
+.box2
+{
+    width: 350px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 10px;
+    border: 3px solid black;
+    position: relative;
+    top: 600px;
+    animation: 3.5s linear 1s infinite alternate none leftMovement;
+    -webkit-animation: 3.5s linear 1s infinite alternate none leftMovement;
+}
+@keyframes leftMovement
+{
+    from
+    { 
+        top: 600px;
+        left: 1400px;
+    }
+    to
+    {
+        top: 600px; 
+        left: 0;
+    }
+}
+.circle
+{
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border: 2px solid black;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    position: relative;
+    margin: 10px;
+    top: 0; /* reset any conflicting value */
+    left: 0;
+    animation: 9s linear 0s infinite alternate-reverse none running circleMovement;
+    -webkit-animation: 9s linear 0s infinite alternate-reverse none running circleMovement;
+}
+@keyframes circleMovement {
+    0%
+    {
+        top: 0px;        /* touching top bar */
+        left: 50px;
+    }
+    30%
+    {
+        top: 300px;
+        left: 90%;
+    }
+    60%
+    {
+        top: 600px;      /* touching bottom bar */
+        left: 10%;
+    }
+    100%
+    {
+        top: 0px;        /* returns to top bar */
+        left: 90%;
+    }
+}

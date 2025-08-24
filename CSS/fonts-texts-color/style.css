@@ -1,0 +1,55 @@
+h1
+{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(216, 69, 147);
+    font-weight: lighter;
+    background-color: rgb(242, 168, 180);
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+p
+{
+    line-height: 30px;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    /*font-style: italic;
+    */font-weight: 500;
+    font-size: 30px;
+    color: rgb(40, 123, 144);
+    background-color: rgb(191, 243, 226);
+    /*text-decoration: underline;*/
+}
+h2
+{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(116, 116, 201);
+    -moz-text-decoration-color: rgb(116, 116, 201);
+    text-decoration-style: solid;
+    -moz-text-decoration-style: solid;
+    text-decoration-thickness: 7px;
+    text-indent: 45px;
+    text-overflow: ellipsis;
+}
+.lorem
+{
+    text-align: center;
+    border: 2px solid red;
+    width: 445px;
+    word-break: break-all;
+    /* text-overflow: ellipsis;
+    overflow: hidden; */
+}
+
+.color h1
+{
+    /* different color properties */
+    background-color: aquamarine;
+    background-color: rgb(244, 244, 154);
+    background-color: rgba(194, 46, 217, 0.153);
+    background-color: #ff33b2;
+    background-color: hsl(120, 74%, 67%);
+}
