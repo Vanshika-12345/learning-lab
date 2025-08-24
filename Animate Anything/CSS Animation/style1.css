@@ -14,13 +14,46 @@ body
 {
     background-color: #111;
 }
-h1
-{
-    color: #fff;
-    font-size: 50px;
-    font-family: sans-serif;
+#main {
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* optional: hide overflow of before/after */
 }
-h1::after
-{
+
+#main::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background: yellow;
+    animation: anime 3s infinite alternate;
+}
+
+#main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 70%;
+    height: 50px;
+    width: 50px;
+    background: red;
+    animation: anime 3s infinite alternate;
+}
+
+@keyframes anime {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        left: 70%;
+        top: 200px;
+        background-color: pink;
+    }
 }
