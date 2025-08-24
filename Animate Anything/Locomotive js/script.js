@@ -1,7 +1,6 @@
-var el = document.querySelector("#main")
-var scroll = new LocomotiveScroll(
-    {
-        el:el,
-        smooth:true
-    }
-)
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+  lerp:0.01
+  
+});
