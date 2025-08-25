@@ -1,0 +1,43 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body
+{
+    height: 100%;
+    width: 100%;
+}
+#page1
+{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(69, 130, 151);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#page1 h1
+{
+    font-size: 6.9vw;
+    line-height: 6vw;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+#page2
+{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#page3
+{
+    height: 100vh;
+    width: 100% ;
+    background-color: #fff
+}
